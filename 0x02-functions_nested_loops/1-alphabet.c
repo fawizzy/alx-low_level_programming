@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
  * main- check the code
@@ -23,6 +22,7 @@ void print_alphabet(void)
 	{
 		_putchar(letter);
 		letter++;
-		return (0);
 	}
+	_putchar('\n');
+	return (0);
 }
