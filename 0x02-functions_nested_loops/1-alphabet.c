@@ -4,7 +4,7 @@
  * main- check the code
  *
  * Description: a function that prints
- *alphabet in lower case 
+ *alphabet in lower case
  *followed by new line
  *
  * Return void
