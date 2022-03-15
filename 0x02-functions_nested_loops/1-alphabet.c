@@ -7,14 +7,8 @@
  * 		alphabet in lower case 
  * 		followed by new line
  *
- * Return always 0
+ * Return void
  */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
@@ -26,5 +20,5 @@ void print_alphabet(void)
 		letter++;
 	}
 	_putchar('\n');
-	return (0);
+
 }
