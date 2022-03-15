@@ -13,7 +13,7 @@ int main(void)
 	int i = 0;
 	while (val[i] != '\0')
 	{
-		char c = str[i];
+		char c = val[i];
 		_putchar(c);
 		i++;
 	}
