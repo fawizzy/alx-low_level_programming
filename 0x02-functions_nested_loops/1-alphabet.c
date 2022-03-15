@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main- check the code
+ * print_alphabet - entry point
  *
  * Description: a function that prints
  *alphabet in lower case
