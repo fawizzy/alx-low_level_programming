@@ -2,16 +2,15 @@
 
 /**
  *  _islower - entry point
- *
  *  Description: check for lower case
- *
- *  Return 0
+ *  @c: the input to check
+ *  Return: 1 if true. 0 if false
  */
 
 int _islower(int c)
 {
 	int letters;
-	
+
 	for (letters = 'a'; letters <= 'z'; letters++)
 	{
 		if (letters == c)
@@ -19,5 +18,5 @@ int _islower(int c)
 			return (1);
 		}
 	}
-	return (0);	
+return (0);
 }
