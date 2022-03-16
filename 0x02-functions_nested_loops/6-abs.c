@@ -4,7 +4,7 @@
  * _abs - entry point
  * @n: number is the integer
  * Description: print absolute value of a number
- * Return 0
+ * Return: 0
  */
 
 int _abs(int n)
