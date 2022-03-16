@@ -20,7 +20,10 @@ void times_table(void)
 			product = i*j;
 			tens = product / 10;
 			unit = product % 10;
-			_putchar(tens + '0');
+			if (tens != 0)
+			{
+				_putchar(tens + '0');
+			}
 			_putchar(unit + '0');
 			_putchar(',');
 			_putchar(' ');
