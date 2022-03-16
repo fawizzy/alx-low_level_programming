@@ -22,12 +22,16 @@ void times_table(void)
 			unit = product % 10;
 			if (tens != 0)
 			{
+				_putchar(' ');
 				_putchar(tens + '0');
+				_putchar(unit + '0');
 			}
-			_putchar(unit + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			else
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(unit + '0');
+			}
 			j++;
 		}
 		_putchar('\n');
