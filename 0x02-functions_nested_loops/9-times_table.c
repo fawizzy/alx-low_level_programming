@@ -10,7 +10,7 @@ void times_table(void)
 {
 	int i = 0;
 	int j = 0;
-	int product;
+	int product, tens, unit;
 
 	while (i < 10)
 	{
@@ -18,7 +18,10 @@ void times_table(void)
 		while (j < 10)
 		{
 			product = i*j;
-			_putchar(product + '0');
+			tens = product / 10;
+			unit = product % 10;
+			_putchar(tens + '0');
+			_putchar(unit + '0');
 			_putchar(',');
 			_putchar(' ');
 			j++;
