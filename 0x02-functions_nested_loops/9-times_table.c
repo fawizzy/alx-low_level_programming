@@ -17,7 +17,7 @@ void times_table(void)
 		j = 0;
 		while (j < 10)
 		{
-			product = i*j;
+			product = i * j;
 			tens = product / 10;
 			unit = product % 10;
 			if (tens != 0)
