@@ -25,12 +25,16 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(tens + '0');
 				_putchar(unit + '0');
+				if (i != 9)
+					_putchar(',');
 			}
 			else
 			{
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(unit + '0');
+				if (i != 9)
+					_putchar(',');
 			}
 			j++;
 		}
