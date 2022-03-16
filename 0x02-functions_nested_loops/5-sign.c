@@ -3,7 +3,7 @@
 /**
  * print_sign - check the sign
  * Description: print the sign of a number
- * @c: character to be tested
+ * @n: character to be tested
  * Return: 1 if c is greater than zero,
  * 0 if c is zero and -1 if less than zero
  */
