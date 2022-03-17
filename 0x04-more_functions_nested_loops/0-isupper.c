@@ -4,20 +4,20 @@
  * _isupper - checks for uppercase character
  * @c: character to check
  * Description: a function that checks for uppercase
- * Returns: 1 if uppercase, 0 if lowercase
+ * Return: 1 if uppercase, 0 if lowercase
  */
 
 int _isupper(int c)
 {
-	for (int letters = 'A'; letters < 'Z'; letters++)
+	int letters;
+
+	for (letters = 'A'; letters < 'Z'; letters++)
 	{
-		if (c == letters)
+		if (letters == c)
 		{
 			return (1);
 		}
-		else
-		{
-			return (0);
-		}
 	}
+
+	return (0);
 }
