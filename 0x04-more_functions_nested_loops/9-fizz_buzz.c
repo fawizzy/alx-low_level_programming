@@ -9,7 +9,7 @@
  * return: void
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int i = 1;
 	int j = 0;
