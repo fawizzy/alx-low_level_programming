@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - entry point
@@ -37,7 +36,7 @@ int main(void)
 		}
 		if (i != 100)
 		{
-			_putchar(' ');
+			printf(" ");
 		}
 		i++;
 	}
