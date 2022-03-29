@@ -5,7 +5,7 @@
  * @s: the string to be searched
  * @accept: the string to be measured
  *
- * Return the number of bytes in s which
+ * Return: the number of bytes in s which
  * consists only of bytes from accept
  */
 
