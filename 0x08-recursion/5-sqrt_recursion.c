@@ -8,8 +8,8 @@
 
 int _sqrt_recursion(int n)
 {
-	int root = x;
-	return check_root(x,root);
+	int root = n;
+	return check_root(n,root);
 }
 
 int check_root(int x, int root)
