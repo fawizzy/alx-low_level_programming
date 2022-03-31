@@ -23,7 +23,7 @@ int check_root(int x, int root)
 {
 	if ((root * root) == x)
 		return (root);
-	else if (root == n/2 || x < 0)
+	else if (root == x / 2 || x < 0)
 		return (-1);
 	else
 		return (check_root(x, root + 1));
