@@ -18,7 +18,7 @@ int is_prime_number(int n)
 	else if (n == 2)
 		return (1);
 	else
-		return check_prime(n, factor + 1);
+		return (check_prime(n, factor + 1));
 }
 
 int check_prime(int x, int factor)
@@ -28,5 +28,5 @@ int check_prime(int x, int factor)
 	else if (x == factor)
 		return (1);
 	else
-		return check_prime(x, factor + 1);
+		return (check_prime(x, factor + 1));
 }
