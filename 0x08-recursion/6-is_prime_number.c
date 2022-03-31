@@ -28,6 +28,7 @@ int is_prime_number(int n)
  * Return: 1 if prime
  * 0 if not prime
  */
+
 int check_prime(int x, int factor)
 {
 	if (x % factor == 0 && x != factor && factor > 1)
