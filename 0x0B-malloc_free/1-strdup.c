@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * strdup - returns pointer to the duplicated string
+ * _strdup - returns pointer to the duplicated string
  * @str: the string to be duplicated
  *
  * Return: NULL if str = NULL
@@ -19,8 +19,8 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	array = malloc(sizeof(char) * (len + 1));	
-	if (array == NULL)
+	array = malloc(sizeof(char) * (len + 1));
+	if (str == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
 	{
