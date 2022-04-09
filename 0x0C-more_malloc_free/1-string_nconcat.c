@@ -36,12 +36,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (mem == NULL)
 		return (NULL);
 
-	for (k = 0; k <= l_mem; k++)
+	for (k = 0; k < l_mem; k++)
 	{
 		if (k < i)
 			mem[k] = s1[k];
 		else
-			mem[k] = s2[k];
+			mem[k] = s2[k - i];
 	}
 	mem[k] = '\0';
 
