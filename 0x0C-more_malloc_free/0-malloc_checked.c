@@ -7,7 +7,7 @@
  * Return: pointer to the allocated memory
  */
 
-void *malloc_checked(int b)
+void *malloc_checked(unsigned int b)
 {
 	char *mem;
 
