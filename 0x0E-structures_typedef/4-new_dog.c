@@ -8,7 +8,6 @@ dog_t *new_dog(char *name, float age, char *owner);
 /**
  * _strlen - Finds the length of a string.
  * @str: The string to be measured.
- * 
  * Return: The length of the string.
  */
 int _strlen(char *str)
@@ -27,7 +26,6 @@ int _strlen(char *str)
  * terminating null byte, to a buffer pointed to by dest.
  * @dest: The buffer storing the string copy.
  * @src: The source string.
- * 
  * Return: The pointer to dest.
  */
 
