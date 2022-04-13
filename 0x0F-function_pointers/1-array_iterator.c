@@ -8,14 +8,14 @@
  * Return: void
  */
 
-void array_iterartor(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int i = 0;
 
 	if (array == NULL || action == NULL)
 		return;
 
-	while (array[i])
+	while (i < size)
 	{
 		action(array[i]);
 		i++;
