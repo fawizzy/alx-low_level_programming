@@ -1,4 +1,5 @@
-#include "calc.h"
+#include "3-calc.h"
+#include <stdlib.h>
 
 /**
  * get_op_func - select the correct function to perform
@@ -19,9 +20,9 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int i = 0;
 
-	for (i = 0; ops[i].op != NULL && ops[i].op != *s; i++)
+	for (i = 0; ops[i].op != NULL && *ops[i].op != *s; i++)
 		;
 	return (ops[i].f);
 }
