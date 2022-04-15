@@ -4,7 +4,7 @@
 
 /**
  * print_strings - function that print strings
- * @separator: string to be printed to be printed 
+ * @separator: string to be printed to be printed
  * beetween the strings
  * @n: number of strings
  * @...: strings to be printed
@@ -34,4 +34,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	printf("\n");
 
 	va_end(strings);
-}	
+}
