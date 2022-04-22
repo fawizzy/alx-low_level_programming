@@ -5,7 +5,7 @@
  * 		in a linked list
  *
  * @h: the beginning of the list
- * 
+ *
  * Return: number of nodes in a list
  */
 
