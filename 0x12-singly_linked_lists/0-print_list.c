@@ -8,22 +8,19 @@
  * Return: the number of nodes on the list
  */
 
-int print_list(list_t *head)
+size_t print_list(list_t *head)
 {
-	int count = 0;
+	size_t count = 0;
+
 	if (head == NULL)
 	{
 		printf("list is empty");
 	}
 	
-	list_t *ptr;
-	ptr = malloc(sizeof(list_t));
-	ptr = head;
-
-	while (ptr != NULL)
+	while (head != NULL)
 	{
-		printf("[%d] %s\n", ptr->len, ptr->str);
-		ptr = ptr->next;
+		printf("[%d] %s\n", head->len, head->str);
+		head = head->next;
 		count++;
 	}
 
