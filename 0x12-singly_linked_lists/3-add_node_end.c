@@ -20,20 +20,14 @@ list_t *add_node_end(list_t **head, char *str)
 	for (len = 0; str[len] != '\0'; len++)
 		;
 
-	if (temp == NULL)
-	{
-		free(temp);
-		return (NULL);
-	}
 	if (newNode == NULL)
 	{
 		return (NULL);
 	}
-	
+
 	dup = strdup(str);
 	if (str == NULL)
 	{
-		free(temp);
 		free(newNode);
 		return (NULL);
 	}
@@ -55,5 +49,5 @@ list_t *add_node_end(list_t **head, char *str)
 		temp->next = newNode;
 	}
 
-	return (newNode);
+	return (*head);
 }
