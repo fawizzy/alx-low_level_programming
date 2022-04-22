@@ -1,5 +1,6 @@
 #include "lists.h"
 #include "stdlib.h"
+#include <string.h>
 
 /**
  * add_node - add a new node at the beginning of the  list
@@ -9,7 +10,7 @@
  * Return: the new node
  */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node(list_t **head, char *str)
 {
 	int len = 0;
 	list_t *temp = malloc(sizeof(list_t));
