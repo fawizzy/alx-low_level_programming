@@ -1,0 +1,26 @@
+st_t *add_node(list_t **head, const char *str)
+{
+	int len = 0;
+	list_t *temp = malloc(sizeof(list_t));
+
+	if (temp == NULL)
+	       	return (NULL);
+
+	if (str == NULL)
+	{
+		free (temp);
+		return (NULL);
+	}
+
+	for (len = 0; str[len] != '\0'; len++)
+		;
+
+	temp->str = strdup(str);
+	temp->len = len;
+	temp->next = NULL;
+
+	temp->next = *head;
+       	*head = temp;
+	return (temp);
+}
+
