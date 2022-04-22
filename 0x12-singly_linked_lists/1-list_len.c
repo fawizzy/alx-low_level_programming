@@ -2,7 +2,7 @@
 
 /**
  * list_len - find the number of elements
- * 		in a linked list
+ * in a linked list
  *
  * @h: the beginning of the list
  *
