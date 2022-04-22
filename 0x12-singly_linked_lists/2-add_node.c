@@ -16,11 +16,11 @@ list_t *add_node(list_t **head, char *str)
 	list_t *temp = malloc(sizeof(list_t));
 
 	if (temp == NULL)
-	       	return (NULL);
+		return (NULL);
 
 	if (str == NULL)
 	{
-		free (temp);
+		free(temp);
 		return (NULL);
 	}
 
@@ -32,7 +32,7 @@ list_t *add_node(list_t **head, char *str)
 	temp->next = NULL;
 
 	temp->next = *head;
-       	*head = temp;
+	*head = temp;
 	return (temp);
 }
 
