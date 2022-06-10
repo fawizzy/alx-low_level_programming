@@ -41,11 +41,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			newNode->prev = aux;
 			newNode->next = (aux)->next;
 			aux->next = newNode;
+			return (newNode);
 		}
 		printf("pos: %d\n", pos);
 		aux = aux->next;
 		pos++;
 	}
+	free(newNode);
 
-	return (newNode);
+	return (NULL);
 }
